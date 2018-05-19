@@ -13,7 +13,7 @@ Accounting data processing based on plain-text files.
 
 ## Usage
 
-Run `npm start`.
+Run `npm start --silent` to output chart data or run `npm start -- --debug` to output parsed records data.
 
 ## Data Format
 
