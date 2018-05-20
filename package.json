@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "server": "node lib/server.js",
     "start": "node lib/index.js"
   },
   "dependencies": {

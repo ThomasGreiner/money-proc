@@ -20,6 +20,8 @@ Run `npm install`.
 
 Run `npm start --silent` to output chart as SVG or run `npm start -- --debug` to output parsed records data.
 
+Run `npm run server` to start a local web server for accessing the data via a web GUI.
+
 ## Data Format
 
 ### Files
