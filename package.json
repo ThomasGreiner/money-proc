@@ -2,5 +2,8 @@
   "private": true,
   "scripts": {
     "start": "node lib/index.js"
+  },
+  "dependencies": {
+    "svc": "github:ThomasGreiner/node-svc"
   }
 }

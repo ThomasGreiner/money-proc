@@ -3,6 +3,7 @@
 Accounting data processing based on plain-text files.
 
 - [Requirements](#requirements)
+- [Setup](#setup)
 - [Usage](#usage)
 - [Data format](#dataformat)
 
@@ -11,9 +12,13 @@ Accounting data processing based on plain-text files.
 - [Node.js](https://nodejs.org/en/)
 - npm (included with Node.js)
 
+## Setup
+
+Run `npm install`.
+
 ## Usage
 
-Run `npm start --silent` to output chart data or run `npm start -- --debug` to output parsed records data.
+Run `npm start --silent` to output chart as SVG or run `npm start -- --debug` to output parsed records data.
 
 ## Data Format
 
@@ -32,6 +37,9 @@ Run `npm start --silent` to output chart data or run `npm start -- --debug` to o
 **Object**
 - **string** category name - (e.g. `job`)
 - **Object|string[]** subcategory (e.g. `salary`) or list of sources
+
+Use the special category name `@self` to mark first-party sources such as
+your own bank accounts.
 
 #### data/statements.csv
 
