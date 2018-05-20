@@ -5,15 +5,18 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-nav {
-  flex-shrink: 0;
+nav, main {
+  box-sizing: border-box;
   max-height: 100vh;
   padding: 0.5em 2em;
-  background-color: #EEE;
   overflow: auto;
+}
+
+nav {
+  flex-shrink: 0;
+  background-color: #EEE;
 }
 
 main {
   flex: 1;
-  padding: 0.5em 2em;
 }
