@@ -38,6 +38,7 @@ function onHashChange() {
   
   document.body.dataset.view = "detail";
   $("#details h2").textContent = id;
+  $("#details .history").src = `/img/svc/bar-source.svg?id=${id}`;
   $("#details .total").src = `/img/svc/line-source.svg?id=${id}`;
 }
 
