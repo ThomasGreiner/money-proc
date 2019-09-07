@@ -18,9 +18,10 @@ Run `npm install`.
 
 ## Usage
 
-Run `npm start --silent` to output chart as SVG or run `npm start -- --debug` to output parsed records data.
-
-Run `npm run server` to start a local web server for accessing the data via a web GUI.
+- `npm start --debug`: Output parsed records data.
+- `npm start --silent`: Output chart as SVG.
+- `npm run query <Source ID>`: Output records for given source ID.
+- `npm run server`: Start a local web server for accessing the data via a Web GUI.
 
 ## Data Format
 
@@ -45,7 +46,7 @@ your own bank accounts.
 
 #### data/statements.csv
 
-- **string** billing date - (e.g. `2000-01-01`)
+- **string** billing date (Valutadatum) - (e.g. `2000-01-01`)
 - [**Source**](#sourceid) source - (e.g. `de.bank`)
 - **string** format - (e.g. `print`)
 - **string** [billing number] - (e.g. `2000/01`)

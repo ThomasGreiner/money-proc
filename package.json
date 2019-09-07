@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "query": "node lib/query.js",
     "server": "node lib/server.js",
     "start": "node lib/index.js"
   },
