@@ -29,6 +29,18 @@ function addCategories(eParent, sources) {
   }
 }
 
+function onHashChange() {
+  let id = location.hash.slice(1);
+  if (!id) {
+    document.body.dataset.view = "general";
+    return;
+  }
+  
+  document.body.dataset.view = "detail";
+  $("#details h2").textContent = id;
+  $("#details .total").src = `/img/svc/source_cumulative.svg?id=${id}`;
+}
+
 async function init() {
   let resp = await fetch("/api/sources.json");
   let sourcesByCat = await resp.json();
@@ -36,3 +48,6 @@ async function init() {
   addCategories($("#categories"), sourcesByCat);
 }
 init();
+onHashChange();
+
+window.addEventListener("hashchange", onHashChange);

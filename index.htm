@@ -5,9 +5,11 @@
   <link rel="stylesheet" type="text/css" href="/css/index.css">
   <script src="/js/index.js" defer></script>
 </head>
-<body>
+<body data-view="general">
 
 <nav>
+  <a href="#">Overview</a>
+  
   <h2>Sources</h2>
   
   <h3>Categories</h3>
@@ -20,14 +22,26 @@
 <main>
   <h1>Money</h1>
   
-  <div id="svc">
+  <article data-view="general">
+    <h2>Overview</h2>
+    
     <img src="/img/svc/distribution.svg">
     <img src="/img/svc/flow_self.svg">
     <img src="/img/svc/inout.svg">
     <img src="/img/svc/inout_distribution.svg">
     <img src="/img/svc/wealth.svg">
     <img src="/img/svc/wealth_distribution.svg">
-  </div>
+  </article>
+  
+  <article id="details" data-view="detail">
+    <h2></h2>
+    
+    <!-- TODO: NYI -->
+    <img class="share">
+    <!-- TODO: NYI -->
+    <img class="history">
+    <img class="total">
+  </article>
 </main>
 
 </body>

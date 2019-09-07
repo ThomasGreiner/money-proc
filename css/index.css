@@ -24,3 +24,8 @@ main {
 main img {
   max-width: 100%;
 }
+
+body:not([data-view="general"]) [data-view="general"],
+body:not([data-view="detail"]) [data-view="detail"] {
+  display: none;
+}
